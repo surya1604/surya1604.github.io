@@ -55,7 +55,7 @@ const Hero = () => {
 
                     <div className="flex items-center gap-3">
                         <ButtonPrimary
-                        href={""} 
+                        href={"https://drive.google.com/file/d/1KHbU0ViHZFSSWIc9MHzPT-jrtQOTRwaW/view?usp=sharing"} 
                         label="View CV"
                         icon="folder"
                         />
