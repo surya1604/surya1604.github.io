@@ -61,7 +61,7 @@ const Work = () => {
       image: "https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/Work/lg0cjcdknt5a3p7woskd",
       title: "MediVision",
       subtitle: "Medical AI • Research • Webapp",
-      description: "Web app for disease detection, severity, and specialists.",
+      description: "Web App for Disease Detection, Severity, and Specialists.",
       link: "/MediVision", // Link to MediVision page
       cardClass: "card-two",
       bgEllipseClass: "bg-blue-500",
@@ -79,7 +79,7 @@ const Work = () => {
       image: "https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/BTD/zkixm114rylylqoca24k",
       title: "Brain Tumor Detection",
       subtitle: "Deep Learning • Research • Medical Imaging",
-      description: "Lightweight CNN for Brain Tumor detection via MRI.",
+      description: "Lightweight CNN for Brain Tumor Detection via MRI.",
       link: "/BrainTumor", // Link to Brain Tumor page
       cardClass: "card-four",
       bgEllipseClass: "bg-purple-500",
@@ -88,7 +88,7 @@ const Work = () => {
       image: "https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/ALHS/euutqmbau1k3wip3howw",
       title: "Automated Light and Human Detection System",
       subtitle: "Automation • IoT• Computer Vision",
-      description: "An IoT solution for automated light system.",
+      description: "An IoT Solution for Automated Light System.",
       link: "/light-human", // Link to the respective page
       cardClass: "card-five",
       bgEllipseClass: "bg-yellow-500",
@@ -97,7 +97,7 @@ const Work = () => {
       image: "https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/Work/fvdwptq2qzf2l48or2tr",
       title: "Driver Drowsiness System",
       subtitle: "Computer Vision • Automation",
-      description: "Real-time driver monitoring to prevent accidents.",
+      description: "Real-time Driver Monitoring to Prevent Accidents.",
       link: "/drowsiness", // Link to the respective page
       cardClass: "card-six",
       bgEllipseClass: "bg-pink-500",
@@ -115,7 +115,7 @@ const Work = () => {
       image: "https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/Work/wx9d9kfrfywcmtzbgi7i",
       title: "More Work",
       subtitle: "Projects • Certifications • Photography",
-      description: "Explore my additional work and certifications.",
+      description: "Explore My Additional Work and Certifications.",
       link: "/more-work", // Link to the respective page
       cardClass: "card-eight",
       bgEllipseClass: "bg-gray-500",
