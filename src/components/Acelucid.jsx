@@ -492,7 +492,7 @@ const AceLucid = () => {
             </p>
             
             <p className="ml-4 mt-4 text-sm font-bold sm:text-5xlfont-semibold text-center">
-            © Copyright 2024. All rights Reserved.
+            © Copyright 2025. All rights Reserved.
             </p>
 
           </div>
