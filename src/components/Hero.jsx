@@ -41,13 +41,7 @@ const Hero = () => {
                     <h2 className="headline-1 max-w-[30ch] sm:max-w-[20ch] lg:max-w-[30ch] mt-5 mb-8 lg:mb-5">
                     {/* Crafting Innovative AI Solutions and Intelligent Systems for Tomorrow */}
                     Hi There! I am Surya Vashisth, 
-                    </h2>
-                    <h2 className="headline-2 max-w-[15ch] sm:max-w-[18ch] lg:max-w-[30ch] mt-5 mb-4 lg:mb-1">
-                    {/* Crafting Innovative AI Solutions and Intelligent Systems for Tomorrow */}
                     A final-year B.Tech CSE student at Amity University Punjab
-                    </h2>
-                    <h2 className="headline-3 max-w-[15ch] sm:max-w-[18ch] lg:max-w-[30ch] mt-3 mb-8 lg:mb-10">
-                    {/* Crafting Innovative AI Solutions and Intelligent Systems for Tomorrow */}
                      with a passion for crafting innovative AI solutions and exploring the endless possibilities of technology
                     </h2>
 
@@ -71,7 +65,7 @@ const Hero = () => {
                 <div className="hidden lg:block">
                     <figure className="w-full max-w-[480px] ml-auto  rounded-[60px] overflow-hidden ">
                         <img 
-                        src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/home/td9dxkaowp9o1fa4eynj" 
+                        src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/home/yjb4ezed4qxblnmovhjh" 
                         width={656}
                         height={800}
                         alt="Surya Vashisth" 

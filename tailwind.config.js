@@ -8,6 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        customColor1: '#F6A0AC',
+        customColor2: '#A1C3E7',
+        customColor3: '#908DCE',
+        customColor4: '#E47C9C',
+        customColor5: '#FFD87D',
+        customColor6: '#D99BD8',
+        customColor7: '#B7C396',
+      },
       backdropBlur: {
         sm: '4px',
         DEFAULT: '8px',

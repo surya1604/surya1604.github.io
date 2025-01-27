@@ -153,16 +153,16 @@ const About = () => {
                                 SKILLS
                             </h2>
                             <div className="skills-container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                                <div className="skill-item bg-orange-600 text-center py-2 rounded">UX Design</div>
-                                <div className="skill-item bg-red-600 text-center py-2 rounded">Frontend Development</div>
-                                <div className="skill-item bg-green-600 text-center py-2 rounded">Web Design</div>
-                                <div className="skill-item bg-blue-600 text-center py-2 rounded">AI/ML Research</div>
-                                <div className="skill-item bg-purple-600 text-center py-2 rounded">Data Analyst</div>
-                                <div className="skill-item bg-yellow-700 text-center py-2 rounded">Software Development</div>
-                                <div className="skill-item bg-gray-600 text-center py-2 rounded">Computer Vision</div>
-                                <div className="skill-item bg-blue-400 text-center py-2 rounded">NLP</div>
-                                <div className="skill-item bg-purple-400 text-center py-2 rounded">API</div>
-                                <div className="skill-item bg-green-600 text-center py-2 rounded">Strategy</div>
+                                <div className="skill-item bg-customColor1 text-center py-2 rounded">UX Design</div>
+                                <div className="skill-item bg-customColor2 text-center py-2 rounded">Frontend Development</div>
+                                <div className="skill-item bg-customColor3 text-center py-2 rounded">Web Design</div>
+                                <div className="skill-item bg-customColor4 text-center py-2 rounded">AI/ML Research</div>
+                                <div className="skill-item bg-customColor5 text-center py-2 rounded">Data Analyst</div>
+                                <div className="skill-item bg-customColor6 text-center py-2 rounded">Software Development</div>
+                                <div className="skill-item bg-customColor7 text-center py-2 rounded">Computer Vision</div>
+                                <div className="skill-item bg-customColor1 text-center py-2 rounded">NLP</div>
+                                <div className="skill-item bg-customColor2 text-center py-2 rounded">API</div>
+                                <div className="skill-item bg-customColor3 text-center py-2 rounded">Strategy</div>
                             </div>
                         </div>
 
