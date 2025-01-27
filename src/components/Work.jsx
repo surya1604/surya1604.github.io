@@ -85,7 +85,7 @@ const Work = () => {
     //   bgEllipseClass: "bg-purple-500",
     // },
     {
-      image: "https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/Work/i72qasqmjxsuowqfpeua",
+      image: "https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/ALHS/euutqmbau1k3wip3howw",
       title: "Automated Light and Human Detection System",
       subtitle: "Automation • IoT• Computer Vision",
       description: "An IoT solution for automated light system.",

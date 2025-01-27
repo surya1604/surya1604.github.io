@@ -7,17 +7,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Medivision = () => {
   return (
-
-    <div className="py-20 ">
+    <div className="py-20">
       {/* Navbar */}
       <Work_navbar />
       <div className="px-16">
         {/* Cover Image */}
-        <div className="flex justify-center py-4 ">
+        <div className="flex justify-center py-4">
           <img
             src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/MediVision/r6j4a2odenbtzzmra6pw"
             alt="Acelucid Cover"
-            className="w-full  max-w-full object-cover rounded-xl shadow-md"
+            className="w-full max-w-full object-cover rounded-xl shadow-md"
           />
         </div>
         {/* Content Wrapper */}
@@ -35,20 +34,16 @@ const Medivision = () => {
                 target="_blank"
                 label="Github"
                 icon={<FontAwesomeIcon icon={faGithub} />}
-                classes="px-4 py-2 "
+                classes="px-4 py-2"
               />
             </div>
-
             <div className="flex flex-col justify-start pb-20">
               <p className="text-base pb-4 px-6">
-                MediVision is a web application designed to assist in detecting brain tumors and diabetic foot ulcers. It helps you book appointments with doctors in your area for timely treatment. MediVision also provides valuable educational resources to enhance your understanding of these conditions, offering a general roadmap for their management and care.              </p>
+                MediVision is a web application designed to assist in detecting brain tumors and diabetic foot ulcers. It helps you book appointments with doctors in your area for timely treatment. MediVision also provides valuable educational resources to enhance your understanding of these conditions, offering a general roadmap for their management and care.
+              </p>
             </div>
-
-
-
             {/* Heading Section */}
-            <div className="text-center  bg-gray-700 shadow-lg rounded-3xl p-2 max-w-4xl">
-
+            <div className="text-center bg-gray-700 shadow-lg rounded-3xl p-2 max-w-4xl">
               <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 flex items-center justify-center pt-32 px-14">
                 <img
                   src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/jzmcumid0hkuuiumlqog"
@@ -63,57 +58,53 @@ const Medivision = () => {
                   />
                 </div>
               </div>
-
-
               <h6 className="text-sm font-medium tracking-wider uppercase text-gray-400">
-                Meet Madhur, who has just received his
-                {" "}<strong className="text-blue-400">
-                  Brain MRI results. </strong> He wants to {" "}<strong className="text-blue-400">
-                  gain
-                  comprehensive knowledge about brain tumors </strong> and understand the next steps he
-                should take. Additionally, Madhur is {" "}<strong className="text-blue-400">
-                  looking to find nearby doctors </strong> who can
-                give him a second point of view.
+                Meet Madhur, who has just received his{" "}
+                <strong className="text-blue-400">Brain MRI results. </strong>
+                He wants to{" "}
+                <strong className="text-blue-400">
+                  gain comprehensive knowledge about brain tumors{" "}
+                </strong>
+                and understand the next steps he should take. Additionally, Madhur is{" "}
+                <strong className="text-blue-400">looking to find nearby doctors</strong>{" "}
+                who can give him a second point of view.
               </h6>
             </div>
           </div>
-
         </div>
-
-
-
       </div>
-      <div className="flex justify-center py-4 mt-20 ">
+      {/* Additional Images */}
+      <div className="flex justify-center py-4 mt-20">
         <img
           src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/MediVision/grw3voler9ae8bzu8x3e"
           alt="Acelucid Cover"
-          className="w-full  max-w-full object-cover rounded-xl shadow-md"
+          className="w-full max-w-full object-cover rounded-xl shadow-md"
         />
       </div>
-      <div className="flex justify-center py-4 mt-20 ">
+      <div className="flex justify-center py-4 mt-20">
         <img
           src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/MediVision/cgctmhaw94ztgz6v8dzo"
           alt="Acelucid Cover"
-          className="w-full  max-w-full object-cover rounded-xl shadow-md"
+          className="w-full max-w-full object-cover rounded-xl shadow-md"
         />
       </div>
-      <div className="flex justify-center py-4 mt-20 ">
+      <div className="flex justify-center py-4 mt-20">
         <img
           src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/MediVision/q7z9inrr8zfjqgkznrwr"
           alt="Acelucid Cover"
-          className="w-full  max-w-full object-cover rounded-xl shadow-md"
+          className="w-full max-w-full object-cover rounded-xl shadow-md"
         />
       </div>
-      <div className="flex justify-center py-4 mt-20 ">
+      <div className="flex justify-center py-4 mt-20">
         <img
           src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/MediVision/xwhrwxeqlmhxjr2fkcyr"
           alt="Acelucid Cover"
-          className="w-full  max-w-full object-cover rounded-xl shadow-md"
+          className="w-full max-w-full object-cover rounded-xl shadow-md"
         />
       </div>
-
-      <div className="relative mb-8">
-        <div className="absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-neutral-800 shadow-lg rounded-3xl p-2 h-auto max-w-md overflow-hidden transition-all duration-300">
+      {/* Progress Message with Animation */}
+      <div className="flex justify-center pb-8 pt-4">
+        <div className="bg-neutral-800 shadow-lg rounded-3xl p-1 max-w-3xl text-center h-auto overflow-hidden transition-all duration-300">
           <div className="animate-scroll whitespace-nowrap">
             <h6 className="text-lg font-medium tracking-wider uppercase text-gray-400">
               This project is in-progress, a couple of features are yet to be added.
@@ -121,11 +112,9 @@ const Medivision = () => {
           </div>
         </div>
       </div>
+      {/* Footer */}
       <Footer />
     </div>
-
-
-
   );
 };
 

@@ -12,7 +12,7 @@ const Footer = () => {
           <img
             src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/home/nsw9pptwglvf0qnbv3gr"
             alt="Profile Picture"
-            className="rounded-full w-16 h-16"
+            className="rounded-full w-12 h-18"
           />
         </div>
 
