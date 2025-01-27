@@ -43,7 +43,7 @@ const Medivision = () => {
               </p>
             </div>
             {/* Heading Section */}
-            <div className="text-center bg-gray-700 shadow-lg rounded-3xl p-2 max-w-4xl">
+            <div className="text-center bg-gray-700 shadow-lg rounded-3xl p-2 max-w-5xl">
               <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 flex items-center justify-center pt-32 px-14">
                 <img
                   src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/jzmcumid0hkuuiumlqog"

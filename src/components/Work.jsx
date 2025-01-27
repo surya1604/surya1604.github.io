@@ -75,15 +75,15 @@ const Work = () => {
     //   cardClass: "card-three",
     //   bgEllipseClass: "bg-green-500",
     // },
-    // {
-    //   image: "https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/Work/a14arsjx0da1gs6ouen6",
-    //   title: "Brain Tumor Detection",
-    //   subtitle: "Deep Learning • Research • Medical Imaging",
-    //   description: "Lightweight CNN for Brain Tumor detection via MRI.",
-    //   link: "/BrainTumor", // Link to Brain Tumor page
-    //   cardClass: "card-four",
-    //   bgEllipseClass: "bg-purple-500",
-    // },
+    {
+      image: "https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/BTD/zkixm114rylylqoca24k",
+      title: "Brain Tumor Detection",
+      subtitle: "Deep Learning • Research • Medical Imaging",
+      description: "Lightweight CNN for Brain Tumor detection via MRI.",
+      link: "/BrainTumor", // Link to Brain Tumor page
+      cardClass: "card-four",
+      bgEllipseClass: "bg-purple-500",
+    },
     {
       image: "https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/ALHS/euutqmbau1k3wip3howw",
       title: "Automated Light and Human Detection System",

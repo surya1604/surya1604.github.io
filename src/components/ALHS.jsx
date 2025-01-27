@@ -38,20 +38,20 @@ const ALHS = () => {
                                                                          />
                                       </div>
 
-                        <div className="flex flex-col justify-start pb-20">
-                            <p className="text-base pb-4 px-6">
+                        <div className="flex flex-col justify-start pb-10">
+                            <p className="text-base pb-4 px-6 text-justify">
                                 An <b> Automated Light and Human Detection System</b> aims to optimize energy consumption by intelligently controlling lighting based on human presence. Using a camera-based detection mechanism, the system identifies when a person enters its field of view and automatically switches on the light. Conversely, it turns off the light when no person is detected, ensuring efficient energy utilization. This project leverages modern detection technologies to create a seamless and cost-effective solution for smart classrooms and office automation, reducing unnecessary power wastage while enhancing user convenience.
                             </p>
                         </div>
 
-                        <div className="flex flex-col py-16 px-72 items-center justify-center  ">
+                        <div className="flex flex-col py-10 px-72 items-center justify-center  ">
                             <h1 className="text-4xl uppercase text-gray-400 font-bold font-mono">
                                 How does it work?
                             </h1>
                         </div>
 
                         {/* Heading Section */}
-                        <div className="text-center  bg-gray-700 shadow-lg rounded-3xl p-2 max-w-4xl">
+                        <div className="text-center  bg-gray-700 shadow-lg rounded-3xl p-2 max-w-5xl">
 
                             <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 flex items-center justify-center pt-32 px-14">
                                 <img

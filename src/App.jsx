@@ -17,6 +17,7 @@ import Medivision from "./components/Medivision";
 import DDS from "./components/DDS"
 import ALHS from "./components/ALHS";
 import Extra from "./components/Extra";
+import BTD from "./components/BTD";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/medivision" element={<Medivision />} />
           <Route path="/drowsiness" element={<DDS />} />
           <Route path="/light-human" element={<ALHS />} />
+          <Route path="/BrainTumor" element={<BTD />} />
           <Route path="/more-work" element={<Extra />} />
 
           {/* Add more routes here as needed */}

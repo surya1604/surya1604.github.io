@@ -107,12 +107,12 @@ const DDS = () => {
                   </div>
 
                         <div className="flex flex-col justify-start pb-20">
-                            <p className="text-base pb-4 px-6">
+                            <p className="text-base pb-4 px-6 text-justify">
                                 A countless number of people drive on the highway day and night. Taxi drivers, bus drivers, truck drivers and people traveling long-distance suffer from lack of sleep. Due to which it becomes very dangerous to drive when feeling sleepy. The majority of accidents happen due to the drowsiness of the driver.
                                 So, to prevent these accidents this is a prototype build using Python, OpenCV, and Keras which will alert the driver when he feels sleepy.     </p>       </div>
 
                         {/* Heading Section */}
-                        <div className="text-center mb-20 bg-gray-700 shadow-lg rounded-3xl p-2 max-w-4xl">
+                        <div className="text-center mb-20 bg-gray-700 shadow-lg rounded-3xl p-2 max-w-5xl">
                             <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 flex items-center justify-center pt-32 px-14">
                                 <img
                                     src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/jzmcumid0hkuuiumlqog"
@@ -139,7 +139,7 @@ const DDS = () => {
                 </div>
 
                 {/* Heading Section */}
-                <div className="text-center mb-20 bg-gray-700 shadow-lg rounded-3xl p-2 max-w-4xl">
+                <div className="text-center mb-20 bg-gray-700 shadow-lg rounded-3xl p-2 max-w-5xl">
                     <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 flex items-center justify-center pt-32 px-14">
                         <img
                             src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/jzmcumid0hkuuiumlqog"
@@ -164,7 +164,7 @@ const DDS = () => {
                 </div>
 
                 {/* Heading Section */}
-                <div className="text-center justify-center bg-gray-700 shadow-lg rounded-3xl p-2 max-w-4xl">
+                <div className="text-center justify-center bg-gray-700 shadow-lg rounded-3xl p-2 max-w-5xl">
                     <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 flex items-center justify-center pt-32 px-14">
                         <img
                             src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/jzmcumid0hkuuiumlqog"
@@ -195,7 +195,7 @@ const DDS = () => {
                 </div>
 
                 {/* Technical Slideshow */}
-                <div className="w-full max-w-4xl mx-auto mb-12 relative overflow-hidden rounded-xl shadow-lg">
+                <div className="w-full max-w-5xl mx-auto mb-12 relative overflow-hidden rounded-xl shadow-lg">
                     <div className="relative h-[400px]">
                         {slides.map((slide, index) => (
                             <div
