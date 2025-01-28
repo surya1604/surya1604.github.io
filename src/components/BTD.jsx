@@ -121,25 +121,24 @@ const BTD = () => {
                 </div>
 
                 <div className="text-center justify-center bg-gray-700 shadow-lg rounded-3xl p-4 max-w-5xl mb-16">
-                    <div className="relative flex-shrink-0 max-w-sm h-72 mx-auto mb-4 flex items-center justify-center pt-32 px-14">
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <img
-                                src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/BTD/epimvfmlgcz9cevqfwss"
-                                alt="NDA Memoji"
-                                className="object-cover w-full h-full"
-                            />
-                        </div>
-                    </div>
+  <div className="relative flex-shrink-0 w-full max-w-md h-auto mx-auto mb-4 flex items-center justify-center">
+    <div className="w-full flex items-center justify-center">
+      <img
+        src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/BTD/epimvfmlgcz9cevqfwss"
+        alt="NDA Memoji"
+        className="object-contain w-full h-auto"
+      />
+    </div>
+  </div>
 
-                    <h6 className="text-sm md:text-base font-medium tracking-wider uppercase text-gray-400 text-justify">
-                        The pipeline starts with
-                        {" "}<strong className="text-blue-400">
-                            basic image preprocessing, including steps like resizing, normalization, and augmentation.</strong> Following preprocessing,
-                        {" "}<strong className="text-blue-400">
-                            feature extraction and reduction are carried out using convolutional and pooling layers.</strong>The extracted features are then utilized to train a 2D CNN model. The model first classifies images as either tumor or non-tumor. For images identified as having a tumor, the model further classifies them into three types of brain tumors: glioma, pituitary, and meningioma.
-                    </h6>
-                </div>
-
+  <h6 className="text-sm md:text-base font-medium tracking-wider uppercase text-gray-400 text-justify">
+    The pipeline starts with
+    {" "}<strong className="text-blue-400">
+      basic image preprocessing, including steps like resizing, normalization, and augmentation.</strong> Following preprocessing,
+    {" "}<strong className="text-blue-400">
+      feature extraction and reduction are carried out using convolutional and pooling layers.</strong>The extracted features are then utilized to train a 2D CNN model. The model first classifies images as either tumor or non-tumor. For images identified as having a tumor, the model further classifies them into three types of brain tumors: glioma, pituitary, and meningioma.
+  </h6>
+</div>
                 <div className="flex justify-center pb-16">
                     <div className="bg-neutral-800 shadow-lg rounded-3xl p-1 max-w-3xl text-center h-auto overflow-hidden transition-all duration-1000">
                         <div className="animate-scroll whitespace-nowrap">

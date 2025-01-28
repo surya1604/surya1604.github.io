@@ -85,14 +85,14 @@ const AceLucid = () => {
         <div className="flex flex-col items-center justify-center">
           {/* Title and Description */}
           <div className="flex flex-col items-start justify-start">
-            <div className="flex flex-col justify-start pb-9 px-6">
+            <div className="flex flex-col justify-start pb-4 pr-6">
               <h1 className="text-3xl font-bold font-mono">
                 Acelucid Technologies Summer Internship
               </h1>
             </div>
 
             <div className="flex flex-col justify-start">
-              <p className="text-base pb-4 px-6">
+              <p className="text-base pb-9 pr-6">
                 During the 2 months of my internship at Acelucid, I explored Deep
                 Fake Detection and the AI integrations at different capabilities
                 in the service.
@@ -135,7 +135,7 @@ const AceLucid = () => {
 </div>
 
             {/* Cisco Overview Section */}
-            <div className="flex flex-col items-start justify-center mt-12 space-y-8">
+            <div className="flex flex-col items-start justify-center mt-9 space-y-8">
               <div className="flex flex-col lg:flex-row items-start lg:items-center mb-8 lg:space-x-6 space-y-6 lg:space-y-0">
                 {/* Heading Section */}
                 <div className="text-left w-full lg:w-1/3">
@@ -151,7 +151,7 @@ const AceLucid = () => {
                 </div>
 
                 {/* Text Section */}
-                <div className="max-w-lg text-justify w-full lg:w-2/3">
+                <div className="max-w-text-justify w-full lg:w-2/3">
                   <p className="text-base text-gray-300">
                     Acelucid Technologies is an{" "}
                     <strong className="text-red-400">
@@ -167,7 +167,7 @@ const AceLucid = () => {
               </div>
 
               {/* Images Section */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="px-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="relative w-full lg:w-64 h-64 bg-gray-400 rounded-lg shadow-lg rotate-4 transform transition hover:rotate-0 flex items-center justify-center z-[-1]">
                   <img
                     src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/lvrbjufvhalxf4ch6csq"
@@ -211,19 +211,13 @@ const AceLucid = () => {
                     <div className="text-base text-gray-300 text-justify">
                       <p>
                         At Acelucid, we believe in the
-                        <strong className="text-red-400">
-                          power of technology to reshape industries, redefine standards, and
+                        <strong className="text-red-400"> power of technology to reshape industries, redefine standards, and
                           rebuild business foundations for the better.
-                        </strong>
-                        My role at the company was to embody this vision by developing a
-                        <strong className="text-red-400">
-                          high-performance software focused on localized deepfake detection.
-                        </strong>
-                        This innovative solution was designed to
-                        <strong className="text-red-400">
-                          identify manipulated media with high precision,
-                        </strong>
-                        addressing one of the most pressing challenges in today's digital
+                        </strong> My role at the company was to embody this vision by developing a
+                        <strong className="text-red-400"> high-performance software focused on localized deepfake detection.
+                        </strong> This innovative solution was designed to
+                        <strong className="text-red-400"> identify manipulated media with high precision,
+                        </strong> addressing one of the most pressing challenges in today's digital
                         landscape.
                       </p>
                     </div>
@@ -310,7 +304,7 @@ const AceLucid = () => {
                 <div className="flex flex-col items-start justify-center mt-12 space-y-8">
                   <div className="flex flex-col lg:flex-row items-start lg:items-center mb-8 lg:space-x-6 space-y-6 lg:space-y-0">
                     {/* Heading Section */}
-                    <div className="text-left w-full lg:w-2/3">
+                    <div className="text-left w-full lg:w-1/3">
                       <h6 className="text-sm font-medium tracking-wider uppercase text-gray-400">
                         How did we do it?
                       </h6>
@@ -400,7 +394,7 @@ const AceLucid = () => {
               <div className="flex flex-col items-start justify-center mt-12 space-y-8">
                 <div className="flex flex-col lg:flex-row items-start lg:items-center mb-8 lg:space-x-6 space-y-6 lg:space-y-0">
                   {/* Heading Section */}
-                  <div className="text-left w-full lg:w-2/3">
+                  <div className="text-left w-full lg:w-1/3">
                     <h6 className="text-sm font-medium tracking-wider uppercase text-gray-400">
                       How did we do it?
                       Outcome?
