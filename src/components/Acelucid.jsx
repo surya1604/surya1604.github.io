@@ -100,7 +100,7 @@ const AceLucid = () => {
             </div>
 
             {/* NDA Section */}
-           <div
+            <div
   className={`${isScrolled && !isBoxClicked
     ? "fixed top-0 left-0 w-full h-full backdrop-blur-lg"
     : "relative"
@@ -110,10 +110,10 @@ const AceLucid = () => {
     className={`${isScrolled && !isBoxClicked
       ? "fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       : "relative"
-      } flex flex-col items-center bg-gray-700 shadow-lg rounded-3xl p-6 max-w-4xl mx-auto transition-all duration-300 z-20 cursor-pointer`}
+      } flex flex-col items-center sm:flex-row bg-gray-700 shadow-lg rounded-3xl p-4 sm:p-6 w-full max-w-4xl mx-auto transition-all duration-300 z-20 cursor-pointer`}
     onClick={handleBoxClick}
   >
-    <div className="relative flex-shrink-0 w-24 h-24 rounded-full overflow-hidden mb-4">
+    <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mb-4 sm:mb-0">
       <img
         src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/vsj9tuid4nisowqotadx"
         alt="NDA Memoji"
@@ -121,14 +121,14 @@ const AceLucid = () => {
       />
     </div>
 
-    <div className="text-gray-100 text-center text-sm">
-    <p>
-                    Hello, a portion of the work displayed here has been conducted
-                    under <strong>Non-Disclosure Agreements.</strong>
-                  </p>
-                  <p className="mt-2">
-                    I kindly request that you refrain from replicating or
-                    reproducing any such confidential content.
+    <div className="text-gray-100 text-center sm:text-left text-sm sm:ml-2">
+      <p>
+        Hello, a portion of the work displayed here has been conducted
+        under <strong>Non-Disclosure Agreements.</strong>
+      </p>
+      <p className="mt-2">
+        I kindly request that you refrain from replicating or
+        reproducing any such confidential content.
       </p>
     </div>
   </div>
@@ -445,9 +445,9 @@ const AceLucid = () => {
     </div>
   </div>
 
-  <div className="pl-10 flex flex-col items-center justify-center text-white">
+  <div className="px-8 flex flex-col items-center justify-center text-white">
     {/* Main Title */}
-    <p className="text-3xl font-bold sm:text-4xl lg:text-4xl text-center">
+    <p className="text-3xl font-bold sm:text-2xl lg:text-3xl text-center">
       I Would Like to Thank
     </p>
 
@@ -455,7 +455,7 @@ const AceLucid = () => {
     <div className="mt-4 h-8 overflow-hidden relative">
       <ul className="animate-slide-vertical space-y-1">
         {["UPES", "Dr. Sachin Chaudhary", "Dr. Praful Hambarde", "Mr. Akhil Chauhan"].map((name, index) => (
-          <li key={index} className="text-xl font-semibold text-center bg-clip-text text-transparent bg-gradient-to-t from-gray-100 to-gray-300">
+          <li key={index} className="text-lg font-semibold text-center bg-clip-text text-transparent bg-gradient-to-t from-gray-100 to-gray-300">
             {name}
           </li>
         ))}
@@ -463,7 +463,7 @@ const AceLucid = () => {
     </div>
 
     {/* Subtitle */}
-    <p className="mt-3 text-xl font-semibold text-center">
+    <p className="mt-3 text-lg font-semibold text-center">
       For their Resources, Mentorship, and Belief in Me Throughout this Journey.
     </p>
 
