@@ -71,13 +71,13 @@ const AceLucid = () => {
     <div className="py-20">
       {/* Navbar */}
       <Work_navbar />
-      <div className="px-16">
+      <div className="px-4 md:px-16">
         {/* Cover Image */}
         <div className="flex justify-center py-4">
           <img
             src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/n9glpbaqh0cxoym7puk4"
             alt="Acelucid Cover"
-            className="w-full max-w-full  object-cover rounded-xl shadow-md"
+            className="w-full max-w-full object-cover rounded-xl shadow-md"
           />
         </div>
 
@@ -113,22 +113,25 @@ const AceLucid = () => {
                   } flex flex-row items-center bg-gray-700 shadow-lg rounded-3xl p-2 max-w-4xl transition-all duration-300 z-20 cursor-pointer`}
                 onClick={handleBoxClick}
               >
-                <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mr-6">
-                  <img
-                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/jzmcumid0hkuuiumlqog"
-                    alt="NDA Background"
-                    className="absolute inset-0 object-cover w-full h-full rounded-full"
-                  />
-                  <div className="absolute inset-0 rounded-full">
+
+                <div className="relative flex flex-col sm:flex-row items-center bg-gray-700 shadow-lg rounded-3xl p-4 sm:p-6 max-w-4xl mx-auto transition-all duration-300 ">
+                  <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mb-4 sm:mb-0 ">
                     <img
-                      src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/vsj9tuid4nisowqotadx"
-                      alt="NDA Memoji"
+                      src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/jzmcumid0hkuuiumlqog"
+                      alt="NDA Background"
                       className="absolute inset-0 object-cover w-full h-full rounded-full"
                     />
+                    <div className="absolute inset-0 rounded-full">
+                      <img
+                        src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/vsj9tuid4nisowqotadx"
+                        alt="NDA Memoji"
+                        className="absolute inset-0 object-cover w-full h-full rounded-full"
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <div className="text-gray-100 text-sm">
+                <div className="text-gray-100 text-sm sm:ml-2">
                   <p>
                     Hello, a portion of the work displayed here has been conducted
                     under <strong>Non-Disclosure Agreements.</strong>
@@ -175,21 +178,21 @@ const AceLucid = () => {
 
               {/* Images Section */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div className="relative w-full lg:w-64 h-64 bg-gray-400 rounded-lg shadow-lg rotate-4 transform transition hover:rotate-0 flex items-center justify-center">
+                <div className="relative w-full lg:w-64 h-64 bg-gray-400 rounded-lg shadow-lg rotate-4 transform transition hover:rotate-0 flex items-center justify-center z-[-1]">
                   <img
                     src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/lvrbjufvhalxf4ch6csq"
                     alt="Acelucid Overview"
                     className="w-full h-full object-contain rounded-lg"
                   />
                 </div>
-                <div className="relative w-full lg:w-64 h-64 bg-gray-400 rounded-lg shadow-lg -rotate-4 transform transition hover:rotate-0 flex items-center justify-center">
+                <div className="relative w-full lg:w-64 h-64 bg-gray-400 rounded-lg shadow-lg -rotate-4 transform transition hover:rotate-0 flex items-center justify-center z-[-1]">
                   <img
                     src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/basmevmbqjaodbjnqi3u"
                     alt="Acelucid Success"
                     className="w-full h-full object-contain rounded-lg"
                   />
                 </div>
-                <div className="relative w-full lg:w-64 h-64 bg-gray-400 rounded-lg shadow-lg rotate-4 transform transition hover:rotate-0 flex items-center justify-center">
+                <div className="relative w-full lg:w-64 h-64 bg-gray-400 rounded-lg shadow-lg rotate-4 transform transition hover:rotate-0 flex items-center justify-center z-[-1]">
                   <img
                     src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/gtmw3tlhnngt2xfusyik"
                     alt="Acelucid Success"
@@ -215,33 +218,34 @@ const AceLucid = () => {
 
                   {/* Text Section */}
                   <div className="max-w-lg text-justify w-full lg:w-2/3">
-                  <div className="text-base text-gray-300 text-justify"> 
-                    <p>
-                      At Acelucid, we believe in the
-                      <strong className="text-red-400">
-                        power of technology to reshape industries, redefine standards, and
-                        rebuild business foundations for the better.
-                      </strong>
-                      My role at the company was to embody this vision by developing a
-                      <strong className="text-red-400">
-                        high-performance software focused on localized deepfake detection.
-                      </strong>
-                      This innovative solution was designed to
-                      <strong className="text-red-400">
-                        identify manipulated media with high precision,
-                      </strong>
-                      addressing one of the most pressing challenges in today's digital
-                      landscape.
-                    </p>
-                  </div>
+                    <div className="text-base text-gray-300 text-justify">
+                      <p>
+                        At Acelucid, we believe in the
+                        <strong className="text-red-400">
+                          power of technology to reshape industries, redefine standards, and
+                          rebuild business foundations for the better.
+                        </strong>
+                        My role at the company was to embody this vision by developing a
+                        <strong className="text-red-400">
+                          high-performance software focused on localized deepfake detection.
+                        </strong>
+                        This innovative solution was designed to
+                        <strong className="text-red-400">
+                          identify manipulated media with high precision,
+                        </strong>
+                        addressing one of the most pressing challenges in today's digital
+                        landscape.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
-                <div className="relative flex flex-col sm:flex-row items-center bg-gray-700 shadow-lg rounded-3xl p-4 sm:p-6 max-w-4xl mx-auto transition-all duration-300">
+                <div className="relative flex flex-col sm:flex-row items-center bg-gray-700 shadow-lg rounded-3xl p-4 sm:p-6 max-w-4xl mx-auto transition-all duration-300 z-[-1]">
                   <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mb-4 sm:mb-0 sm:mr-6">
                     <img
                       src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/jzmcumid0hkuuiumlqog"
                       alt="NDA Background"
+
                       className="absolute inset-0 object-cover w-full h-full rounded-full"
                     />
                     <div className="absolute inset-0 rounded-full">
@@ -253,10 +257,10 @@ const AceLucid = () => {
                     </div>
                   </div>
 
-                  <div className="text-gray-100 text-sm text-center sm:text-left">
+                  <div className="text-gray-100 text-sm text-center sm:text-left z-[-1]">
                     <p>
                       Are you also wondering what are
-                      <strong>different types of Deepfakes?</strong> Let's hear it out from an
+                      <strong> different types of Deepfakes?</strong> Let's hear it out from an
                       AI-generated video itself!
                     </p>
                   </div>
@@ -289,17 +293,17 @@ const AceLucid = () => {
 
                   {/* Text Section */}
                   <div className="max-w-lg text-justify w-full lg:w-2/3">
-                  <div className="text-base text-gray-300 text-justify">
-                    <p>
-                      As part of the AI team during my internship, I collaborated closely
-                      with my teammates to research and implement various deepfake detection
-                      pipelines. Together, we developed a unique pipeline capable of
-                      detecting localized deepfakes by analyzing audios and visuals of a
-                      video. My contributions focused on optimizing the model and developing
-                      an API to enhance accuracy and reduce latency, ensuring seamless
-                      real-time detection.
-                    </p>
-                  </div>
+                    <div className="text-base text-gray-300 text-justify">
+                      <p>
+                        As part of the AI team during my internship, I collaborated closely
+                        with my teammates to research and implement various deepfake detection
+                        pipelines. Together, we developed a unique pipeline capable of
+                        detecting localized deepfakes by analyzing audios and visuals of a
+                        video. My contributions focused on optimizing the model and developing
+                        an API to enhance accuracy and reduce latency, ensuring seamless
+                        real-time detection.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
@@ -314,10 +318,10 @@ const AceLucid = () => {
 
                 {/* How did we do it? Section */}
                 <div className="flex flex-col items-start justify-center mt-12 space-y-8">
-                <div className="flex flex-col lg:flex-row items-start lg:items-center mb-8 lg:space-x-6 space-y-6 lg:space-y-0">
-                  {/* Heading Section */}
-                  <div className="text-left w-full lg:w-2/3">
-                    <h6 className="text-sm font-medium tracking-wider uppercase text-gray-400">
+                  <div className="flex flex-col lg:flex-row items-start lg:items-center mb-8 lg:space-x-6 space-y-6 lg:space-y-0">
+                    {/* Heading Section */}
+                    <div className="text-left w-full lg:w-2/3">
+                      <h6 className="text-sm font-medium tracking-wider uppercase text-gray-400">
                         How did we do it?
                       </h6>
                       <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-t from-red-300 to-red-500">
@@ -325,22 +329,22 @@ const AceLucid = () => {
                       </h2>
                     </div>
 
-                      {/* Text Section */}
-                  <div className="max-w-lg text-justify w-full lg:w-2/3">
-                  <div className="text-base text-gray-300 text-justify">
-                      <p>
-                        Research, Research, Research, and Research is what we did in 2 months.
-                        From researching potential pipelines, suitable datasets to what can be
-                        the most "Perfect" outcome. The process involved continuous brainstorming
-                        sessions, where ideas flowed freely and were critically evaluated. We
-                        explored various approaches to ensure our solution was both innovative
-                        and effective.
-                      </p>
-                    </div>
+                    {/* Text Section */}
+                    <div className="max-w-lg text-justify w-full lg:w-2/3">
+                      <div className="text-base text-gray-300 text-justify">
+                        <p>
+                          Research, Research, Research, and Research is what we did in 2 months.
+                          From researching potential pipelines, suitable datasets to what can be
+                          the most "Perfect" outcome. The process involved continuous brainstorming
+                          sessions, where ideas flowed freely and were critically evaluated. We
+                          explored various approaches to ensure our solution was both innovative
+                          and effective.
+                        </p>
+                      </div>
                     </div>
                   </div>
 
-                  <div className="relative flex flex-col sm:flex-row items-center bg-gray-700 shadow-lg rounded-3xl p-4 sm:p-6 max-w-4xl mx-auto transition-all duration-300">
+                  <div className="relative flex flex-col sm:flex-row items-center bg-gray-700 shadow-lg rounded-3xl p-4 sm:p-6 max-w-4xl mx-auto transition-all duration-300 z-[-1]">
                     <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mb-4 sm:mb-0 sm:mr-6">
                       <img
                         src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/jzmcumid0hkuuiumlqog"
@@ -408,7 +412,7 @@ const AceLucid = () => {
                   {/* Heading Section */}
                   <div className="text-left w-full lg:w-2/3">
                     <h6 className="text-sm font-medium tracking-wider uppercase text-gray-400">
-                        How did we do it?
+                      How did we do it?
                       Outcome?
                     </h6>
                     <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-t from-red-300 to-red-500">
@@ -418,19 +422,19 @@ const AceLucid = () => {
 
                   {/* Text Section */}
                   <div className="max-w-lg text-justify w-full lg:w-2/3">
-                  <div className="text-base text-gray-300 text-justify">
-                    <p>
-                      After two months of dedicated hard work, I came to appreciate
-                      the immense value of good guidance, a supportive work
-                      culture, and a collaborative approach to knowledge sharing. I
-                      realized how crucial it is to work in an environment where
-                      everyone is encouraged to grow together, with mutual support
-                      and shared goals. Such an atmosphere not only enhances
-                      individual learning but also fosters a sense of unity and
-                      collective progress, making every effort more impactful and
-                      fulfilling.
-                    </p>
-                  </div>
+                    <div className="text-base text-gray-300 text-justify">
+                      <p>
+                        After two months of dedicated hard work, I came to appreciate
+                        the immense value of good guidance, a supportive work
+                        culture, and a collaborative approach to knowledge sharing. I
+                        realized how crucial it is to work in an environment where
+                        everyone is encouraged to grow together, with mutual support
+                        and shared goals. Such an atmosphere not only enhances
+                        individual learning but also fosters a sense of unity and
+                        collective progress, making every effort more impactful and
+                        fulfilling.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -439,46 +443,49 @@ const AceLucid = () => {
         </div>
       </div>
 
-      <div className="relative flex flex-row items-center bg-neutral-800 shadow-lg rounded-3xl p-4 h-[600px] w-full max-w-full mx-auto transition-all duration-300 z-[-1]">
+      <div className="relative flex flex-col sm:flex-row items-center bg-neutral-800 shadow-lg rounded-3xl p-4 min-h-[400px] sm:h-[500px] lg:h-[550px] w-full max-w-full mx-auto transition-all duration-300 z-[-1]">
   {/* Image Slideshow Section */}
-  <div className="flex-1 flex justify-center lg:justify-start px-2 z-[-1]">
+  <div className="flex-1 flex justify-center lg:justify-start px-2">
     <div className="relative w-full max-w-[360px] rounded-[40px] overflow-hidden">
       <img
         src={images[currentImage]}
         alt={`Photography Slideshow Image ${currentImage + 1}`}
-        className="w-full h-full object-cover object-center transition-opacity duration-800"
+        className="w-full h-auto object-contain transition-opacity duration-800"
       />
     </div>
 
-    <div className="pl-10 flex flex-col items-center justify-center text-white">
-      {/* Main Title */}
-      <p className="text-3xl font-bold sm:text-4xl lg:text-4xl text-center">
-        I Would Like to Thank
-      </p>
 
-      {/* Rotating Text */}
-      <div className="mt-4 h-8 overflow-hidden relative">
-        <ul className="animate-slide-vertical space-y-1">
-          {["UPES", "Dr. Sachin Chaudhary", "Dr. Praful Hambarde", "Mr. Akhil Chauhan"].map((name, index) => (
-            <li key={index} className="text-xl font-semibold text-center bg-clip-text text-transparent bg-gradient-to-t from-gray-100 to-gray-300">
-              {name}
-            </li>
-          ))}
-        </ul>
+
+
+          <div className="pl-10 flex flex-col items-center justify-center text-white">
+            {/* Main Title */}
+            <p className="text-3xl font-bold sm:text-4xl lg:text-4xl text-center">
+              I Would Like to Thank
+            </p>
+
+            {/* Rotating Text */}
+            <div className="mt-4 h-8 overflow-hidden relative">
+              <ul className="animate-slide-vertical space-y-1">
+                {["UPES", "Dr. Sachin Chaudhary", "Dr. Praful Hambarde", "Mr. Akhil Chauhan"].map((name, index) => (
+                  <li key={index} className="text-xl font-semibold text-center bg-clip-text text-transparent bg-gradient-to-t from-gray-100 to-gray-300">
+                    {name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Subtitle */}
+            <p className="mt-3 text-xl font-semibold text-center">
+              For their Resources, Mentorship, and Belief in Me Throughout this Journey.
+            </p>
+
+            <p className="mt-2 text-xs font-bold text-center">
+              © Copyright 2025. All rights Reserved.
+            </p>
+          </div>
+        </div>
       </div>
-
-      {/* Subtitle */}
-      <p className="mt-3 text-xl font-semibold text-center">
-        For their Resources, Mentorship, and Belief in Me Throughout this Journey.
-      </p>
-
-      <p className="mt-2 text-xs font-bold text-center">
-        © Copyright 2025. All rights Reserved.
-      </p>
     </div>
-  </div>
-</div>
-</div>
 
   );
 };
