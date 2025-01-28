@@ -10,7 +10,7 @@ const Medivision = () => {
     <div className="py-20">
       {/* Navbar */}
       <Work_navbar />
-      <div className="px-16">
+      <div className="px-4 md:px-16">
         {/* Cover Image */}
         <div className="flex justify-center py-4">
           <img
@@ -23,9 +23,9 @@ const Medivision = () => {
         <div className="flex flex-col items-center justify-center">
           {/* Title and Description */}
           <div className="flex flex-col items-start justify-start">
-            <div className="flex items-center pb-9 px-6">
+            <div className="flex flex-col md:flex-row items-center pb-9 px-6">
               {/* Title */}
-              <h1 className="text-3xl font-bold font-mono mr-4">
+              <h1 className="text-2xl md:text-3xl font-bold font-mono mr-4">
                 MediVision: doc-in-hand
               </h1>
               {/* Button */}
@@ -34,11 +34,11 @@ const Medivision = () => {
                 target="_blank"
                 label="Github"
                 icon={<FontAwesomeIcon icon={faGithub} />}
-                classes="px-4 py-2"
+                classes="px-4 py-2 mt-2 md:mt-0"
               />
             </div>
             <div className="flex flex-col justify-start pb-20">
-              <p className="text-base pb-4 px-6">
+              <p className="text-sm md:text-base pb-4 px-6">
                 MediVision is a web application designed to assist in detecting brain tumors and diabetic foot ulcers. It helps you book appointments with doctors in your area for timely treatment. MediVision also provides valuable educational resources to enhance your understanding of these conditions, offering a general roadmap for their management and care.
               </p>
             </div>
@@ -58,7 +58,7 @@ const Medivision = () => {
                   />
                 </div>
               </div>
-              <h6 className="text-sm font-medium tracking-wider uppercase text-gray-400">
+              <h6 className="text-sm md:text-base font-medium tracking-wider uppercase text-gray-400">
                 Meet Madhur, who has just received his{" "}
                 <strong className="text-blue-400">Brain MRI results. </strong>
                 He wants to{" "}
@@ -74,32 +74,26 @@ const Medivision = () => {
         </div>
       </div>
       {/* Additional Images */}
-      <div className="flex justify-center py-4 mt-20">
+      <div className="flex flex-wrap justify-center py-4 mt-20 space-y-8 md:space-y-0 md:space-x-8">
         <img
           src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/MediVision/grw3voler9ae8bzu8x3e"
           alt="Acelucid Cover"
-          className="w-full max-w-full object-cover rounded-xl shadow-md"
+          className="w-full md:w-1/2 lg:w-1/3 object-cover rounded-xl shadow-md"
         />
-      </div>
-      <div className="flex justify-center py-4 mt-20">
         <img
           src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/MediVision/cgctmhaw94ztgz6v8dzo"
           alt="Acelucid Cover"
-          className="w-full max-w-full object-cover rounded-xl shadow-md"
+          className="w-full md:w-1/2 lg:w-1/3 object-cover rounded-xl shadow-md"
         />
-      </div>
-      <div className="flex justify-center py-4 mt-20">
         <img
           src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/MediVision/q7z9inrr8zfjqgkznrwr"
           alt="Acelucid Cover"
-          className="w-full max-w-full object-cover rounded-xl shadow-md"
+          className="w-full md:w-1/2 lg:w-1/3 object-cover rounded-xl shadow-md"
         />
-      </div>
-      <div className="flex justify-center py-4 mt-20">
         <img
           src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/MediVision/xwhrwxeqlmhxjr2fkcyr"
           alt="Acelucid Cover"
-          className="w-full max-w-full object-cover rounded-xl shadow-md"
+          className="w-full md:w-1/2 lg:w-1/3 object-cover rounded-xl shadow-md"
         />
       </div>
       {/* Progress Message with Animation */}

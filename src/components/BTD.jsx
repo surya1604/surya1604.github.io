@@ -1,31 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Work_navbar from "./Work_navbar";
 import Footer from "./Footer";
 import { ButtonOutline } from "./Button";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
 const BTD = () => {
     return (
-        <div className="py-20 ">
+        <div className="py-20">
             {/* Navbar */}
             <Work_navbar />
-            <div className="px-16">
+            <div className="px-4 md:px-16">
                 {/* Cover Image */}
-                <div className="flex justify-center py-4 ">
+                <div className="flex justify-center py-4">
                     <img
                         src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/BTD/rskeirqbn9s6eeep3xjh"
                         alt="Acelucid Cover"
-                        className="w-full  max-w-full object-cover rounded-xl shadow-md"
+                        className="w-full max-w-full object-cover rounded-xl shadow-md"
                     />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                     {/* Title and Description */}
                     <div className="flex flex-col items-start justify-start">
-                        <div className="flex items-center pb-9 px-6">
+                        <div className="flex flex-col md:flex-row items-center pb-9 px-6">
                             {/* Title */}
-                            <h1 className="text-3xl font-bold font-mono mr-4">
+                            <h1 className="text-2xl md:text-3xl font-bold font-mono mr-4">
                                 Brain Tumor Detection
                             </h1>
                             {/* Button */}
@@ -34,15 +33,16 @@ const BTD = () => {
                                 target="_blank"
                                 label="Github"
                                 icon={<FontAwesomeIcon icon={faGithub} />}
-                                classes="px-4 py-2 "
+                                classes="px-4 py-2 mt-2 md:mt-0"
                             />
                         </div>
 
                         <div className="flex flex-col justify-start pb-10">
-                            <p className="text-base text-justify pb-4 px-6">
-                                The work introduces a lightweight Convolutional Neural Network (CNN) for detecting and classifying brain tumors using MRI images. The model was trained on a dataset containing 7,023 images categorized into four classes: glioma, meningioma, pituitary, and non-tumor. Key preprocessing steps included image resizing, normalization, and data augmentation to enhance dataset size and model robustness. The CNN architecture consists of convolutional, max pooling, dropout, flattening, and dense layers. Using the Adam optimizer, the model achieved an impressive 98.20% accuracy on the test dataset. </p>
+                            <p className="text-sm md:text-base text-justify pb-4 px-6">
+                                The work introduces a lightweight Convolutional Neural Network (CNN) for detecting and classifying brain tumors using MRI images. The model was trained on a dataset containing 7,023 images categorized into four classes: glioma, meningioma, pituitary, and non-tumor. Key preprocessing steps included image resizing, normalization, and data augmentation to enhance dataset size and model robustness. The CNN architecture consists of convolutional, max pooling, dropout, flattening, and dense layers. Using the Adam optimizer, the model achieved an impressive 98.20% accuracy on the test dataset.
+                            </p>
                         </div>
-                        <div className="relative flex flex-row items-center bg-gray-700 shadow-lg rounded-3xl p-2 max-w-4xl transition-all duration-300 ">
+                        <div className="relative flex flex-col md:flex-row items-center bg-gray-700 shadow-lg rounded-3xl p-2 max-w-4xl transition-all duration-300">
                             <div className="pl-10 relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mr-6">
                                 <img
                                     src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/jzmcumid0hkuuiumlqog"
@@ -58,7 +58,7 @@ const BTD = () => {
                                 </div>
                             </div>
 
-                            <div className="text-gray-100 text-sm">
+                            <div className="text-gray-100 text-sm mt-4 md:mt-0">
                                 <p>
                                     This work would not have been possible without the incredible teamwork and dedication of my collaborators.
                                     Heartfelt thanks to <a
@@ -86,63 +86,12 @@ const BTD = () => {
                                     </a> for their invaluable contributions and support throughout the project. Their commitment played a pivotal role in achieving this milestone.
                                 </p>
                             </div>
-
                         </div>
-                        {/* Heading Section */}
-                        {/* <div className="text-center mb-20 bg-gray-700 shadow-lg rounded-3xl p-2 max-w-4xl">
-                            <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 flex items-center justify-center pt-32 px-14">
-                                <img
-                                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/jzmcumid0hkuuiumlqog"
-                                    alt="NDA Background"
-                                    className="absolute inset-0 object-cover w-full h-full rounded-full"
-                                />
-                                <div className="absolute inset-0 rounded-full flex items-center justify-center">
-                                    <img
-                                        src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/DDS/sypywzk6iueid4zn3erg"
-                                        alt="NDA Memoji"
-                                        className="object-cover w-full h-full rounded-full"
-                                    />
-                                </div>
-                            </div>
-
-                            <h6 className="text-sm font-medium tracking-wider uppercase text-gray-400">
-                                Meet Rajesh, a tired truck driver,
-                                {" "}<strong className="text-blue-400">
-                                    had been driving for hours, </strong>  his eyes growing heavier with sleep.The steady sound of the tires on the wet road was making him{" "}<strong className="text-blue-400">
-                                    feel drowsy, his eyelids slowly closing with each mile.</strong> He knew how dangerous this could be, but the journey felt never-ending, and his body just needed rest.
-                            </h6>
-                        </div> */}
                     </div>
                 </div>
 
-                {/* Heading Section
-                <div className="text-center mb-20 bg-gray-700 shadow-lg rounded-3xl p-2 max-w-4xl">
-                    <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 flex items-center justify-center pt-32 px-14">
-                        <img
-                            src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/jzmcumid0hkuuiumlqog"
-                            alt="NDA Background"
-                            className="absolute inset-0 object-cover w-full h-full rounded-full"
-                        />
-                        <div className="absolute inset-0 rounded-full flex items-center justify-center">
-                            <img
-                                src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/DDS/szqqklyowbvwoihrtnsb"
-                                alt="NDA Memoji"
-                                className="object-cover w-full h-full rounded-full"
-                            />
-                        </div>
-                    </div>
-
-                    <h6 className="text-sm font-medium tracking-wider uppercase text-gray-400">
-                        As his vision started to fade, a loud beep suddenly snapped him out of it. The dashboard flashed:
-                        {" "}<strong className="text-blue-400">
-                            "Warning: Driver Drowsiness Detected." </strong>  His heart skipped a beat.{" "}<strong className="text-blue-400">
-                            The system, powered by Python and OpenCV,</strong>had caught the signs—his slow blinks and drooping eyes.
-                    </h6>
-                </div> */}
-
-
                 <div className="flex flex-col pt-12 px-6 items-center justify-center">
-                    <h1 className="text-4xl uppercase text-gray-400 font-bold font-mono">
+                    <h1 className="text-3xl md:text-4xl uppercase text-gray-400 font-bold font-mono">
                         How does it work?
                     </h1>
                 </div>
@@ -156,7 +105,7 @@ const BTD = () => {
                             />
                         </div>
                     </div>
-                    <h6 className="text-sm font-medium tracking-wider uppercase text-gray-400 text-justify">
+                    <h6 className="text-sm md:text-base font-medium tracking-wider uppercase text-gray-400 text-justify">
                         The dataset used in this work consisted of MRI images in different sizes. To bring consistency in the dataset and to
                         increase the speed of the processing we resized each image to 120*120.
 
@@ -171,11 +120,8 @@ const BTD = () => {
                     </h6>
                 </div>
 
-
-                {/* Heading Section */}
-                <div className="text-center justify-center bg-gray-700 shadow-lg rounded-3xl p-4 max-w-5xl mb-16 ">
+                <div className="text-center justify-center bg-gray-700 shadow-lg rounded-3xl p-4 max-w-5xl mb-16">
                     <div className="relative flex-shrink-0 max-w-sm h-72 mx-auto mb-4 flex items-center justify-center pt-32 px-14">
-
                         <div className="absolute inset-0 flex items-center justify-center">
                             <img
                                 src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/BTD/epimvfmlgcz9cevqfwss"
@@ -185,15 +131,15 @@ const BTD = () => {
                         </div>
                     </div>
 
-                    <h6 className="text-sm font-medium tracking-wider uppercase text-gray-400 text-justify">
+                    <h6 className="text-sm md:text-base font-medium tracking-wider uppercase text-gray-400 text-justify">
                         The pipeline starts with
                         {" "}<strong className="text-blue-400">
                             basic image preprocessing, including steps like resizing, normalization, and augmentation.</strong> Following preprocessing,
                         {" "}<strong className="text-blue-400">
-                            feature extraction and reduction are carried out using convolutional and pooling layers.</strong> that happen when a driver falls asleep at the wheel. The extracted features are then utilized to train a 2D CNN model. The model first classifies images as either tumor or non-tumor. For images identified as having a tumor, the model further classifies them into three types of brain tumors: glioma, pituitary, and meningioma.
+                            feature extraction and reduction are carried out using convolutional and pooling layers.</strong>The extracted features are then utilized to train a 2D CNN model. The model first classifies images as either tumor or non-tumor. For images identified as having a tumor, the model further classifies them into three types of brain tumors: glioma, pituitary, and meningioma.
                     </h6>
                 </div>
-                {/* Progress Message with Animation */}
+
                 <div className="flex justify-center pb-16">
                     <div className="bg-neutral-800 shadow-lg rounded-3xl p-1 max-w-3xl text-center h-auto overflow-hidden transition-all duration-1000">
                         <div className="animate-scroll whitespace-nowrap">
@@ -206,7 +152,6 @@ const BTD = () => {
 
                 <Footer />
             </div>
-
         </div>
     );
 };
