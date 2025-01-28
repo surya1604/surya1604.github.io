@@ -74,26 +74,32 @@ const Medivision = () => {
         </div>
       </div>
       {/* Additional Images */}
-      <div className="flex flex-wrap justify-center py-4 mt-20 space-y-8 md:space-y-0 md:space-x-8">
+      <div className="flex justify-center py-4 mt-20">
         <img
           src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/MediVision/grw3voler9ae8bzu8x3e"
           alt="Acelucid Cover"
-          className="w-full md:w-1/2 lg:w-1/3 object-cover rounded-xl shadow-md"
+          className="w-full max-w-full object-cover rounded-xl shadow-md"
         />
+      </div>
+      <div className="flex justify-center py-4 mt-20">
         <img
           src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/MediVision/cgctmhaw94ztgz6v8dzo"
           alt="Acelucid Cover"
-          className="w-full md:w-1/2 lg:w-1/3 object-cover rounded-xl shadow-md"
+          className="w-full max-w-full object-cover rounded-xl shadow-md"
         />
+      </div>
+      <div className="flex justify-center py-4 mt-20">
         <img
           src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/MediVision/q7z9inrr8zfjqgkznrwr"
           alt="Acelucid Cover"
-          className="w-full md:w-1/2 lg:w-1/3 object-cover rounded-xl shadow-md"
+          className="w-full max-w-full object-cover rounded-xl shadow-md"
         />
+      </div>
+      <div className="flex justify-center py-4 mt-20">
         <img
           src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/MediVision/xwhrwxeqlmhxjr2fkcyr"
           alt="Acelucid Cover"
-          className="w-full md:w-1/2 lg:w-1/3 object-cover rounded-xl shadow-md"
+          className="w-full max-w-full object-cover rounded-xl shadow-md"
         />
       </div>
       {/* Progress Message with Animation */}
