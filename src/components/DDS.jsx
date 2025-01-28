@@ -105,7 +105,7 @@ const DDS = () => {
 
                 {/* Technical Slideshow */}
                 <div className="w-full max-w-5xl mx-auto mb-12 relative overflow-hidden rounded-xl shadow-lg">
-                    <div className="relative h-[400px]">
+                    <div className="relative h-64 md:h-96">
                         {slides.map((slide, index) => (
                             <div
                                 key={index}
@@ -116,7 +116,7 @@ const DDS = () => {
                                 <img
                                     src={slide.image}
                                     alt={`Slide ${index + 1}`}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover md:object-contain"
                                 />
                             </div>
                         ))}
