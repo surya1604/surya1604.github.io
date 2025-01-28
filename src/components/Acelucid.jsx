@@ -100,49 +100,39 @@ const AceLucid = () => {
             </div>
 
             {/* NDA Section */}
-            <div
-              className={`${isScrolled && !isBoxClicked
-                ? "fixed top-0 left-0 w-full h-full backdrop-blur-lg"
-                : "relative"
-                } transition-all duration-300`}
-            >
-              <div
-                className={`${isScrolled && !isBoxClicked
-                  ? "fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                  : "relative"
-                  } flex flex-row items-center bg-gray-700 shadow-lg rounded-3xl p-2 max-w-4xl transition-all duration-300 z-20 cursor-pointer`}
-                onClick={handleBoxClick}
-              >
+           <div
+  className={`${isScrolled && !isBoxClicked
+    ? "fixed top-0 left-0 w-full h-full backdrop-blur-lg"
+    : "relative"
+    } transition-all duration-300`}
+>
+  <div
+    className={`${isScrolled && !isBoxClicked
+      ? "fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      : "relative"
+      } flex flex-col items-center bg-gray-700 shadow-lg rounded-3xl p-6 max-w-4xl mx-auto transition-all duration-300 z-20 cursor-pointer`}
+    onClick={handleBoxClick}
+  >
+    <div className="relative flex-shrink-0 w-24 h-24 rounded-full overflow-hidden mb-4">
+      <img
+        src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/vsj9tuid4nisowqotadx"
+        alt="NDA Memoji"
+        className="absolute inset-0 object-cover w-full h-full rounded-full"
+      />
+    </div>
 
-                <div className="relative flex flex-col sm:flex-row items-center bg-gray-700 shadow-lg rounded-3xl p-4 sm:p-6 max-w-4xl mx-auto transition-all duration-300 ">
-                  <div className="relative flex-shrink-0 w-16 h-16 rounded-full overflow-hidden mb-4 sm:mb-0 ">
-                    <img
-                      src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/jzmcumid0hkuuiumlqog"
-                      alt="NDA Background"
-                      className="absolute inset-0 object-cover w-full h-full rounded-full"
-                    />
-                    <div className="absolute inset-0 rounded-full">
-                      <img
-                        src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/stickers/vsj9tuid4nisowqotadx"
-                        alt="NDA Memoji"
-                        className="absolute inset-0 object-cover w-full h-full rounded-full"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="text-gray-100 text-sm sm:ml-2">
-                  <p>
+    <div className="text-gray-100 text-center text-sm">
+    <p>
                     Hello, a portion of the work displayed here has been conducted
                     under <strong>Non-Disclosure Agreements.</strong>
                   </p>
                   <p className="mt-2">
                     I kindly request that you refrain from replicating or
                     reproducing any such confidential content.
-                  </p>
-                </div>
-              </div>
-            </div>
+      </p>
+    </div>
+  </div>
+</div>
 
             {/* Cisco Overview Section */}
             <div className="flex flex-col items-start justify-center mt-12 space-y-8">
@@ -443,9 +433,9 @@ const AceLucid = () => {
         </div>
       </div>
 
-      <div className="relative flex flex-col sm:flex-row items-center bg-neutral-800 shadow-lg rounded-3xl p-4 min-h-[400px] sm:h-[500px] lg:h-[550px] w-full max-w-full mx-auto transition-all duration-300 z-[-1]">
+      <div className="relative flex flex-col sm:flex-row items-center bg-neutral-800 shadow-lg rounded-3xl p-4 min-h-[250px] sm:min-h-[300px] w-full max-w-full mx-auto transition-all duration-300 z-[-1]">
   {/* Image Slideshow Section */}
-  <div className="flex-1 flex justify-center lg:justify-start px-2">
+  <div className="flex-1 flex justify-center lg:justify-start px-2 hidden md:block">
     <div className="relative w-full max-w-[360px] rounded-[40px] overflow-hidden">
       <img
         src={images[currentImage]}
@@ -453,39 +443,37 @@ const AceLucid = () => {
         className="w-full h-auto object-contain transition-opacity duration-800"
       />
     </div>
+  </div>
 
+  <div className="pl-10 flex flex-col items-center justify-center text-white">
+    {/* Main Title */}
+    <p className="text-3xl font-bold sm:text-4xl lg:text-4xl text-center">
+      I Would Like to Thank
+    </p>
 
-
-
-          <div className="pl-10 flex flex-col items-center justify-center text-white">
-            {/* Main Title */}
-            <p className="text-3xl font-bold sm:text-4xl lg:text-4xl text-center">
-              I Would Like to Thank
-            </p>
-
-            {/* Rotating Text */}
-            <div className="mt-4 h-8 overflow-hidden relative">
-              <ul className="animate-slide-vertical space-y-1">
-                {["UPES", "Dr. Sachin Chaudhary", "Dr. Praful Hambarde", "Mr. Akhil Chauhan"].map((name, index) => (
-                  <li key={index} className="text-xl font-semibold text-center bg-clip-text text-transparent bg-gradient-to-t from-gray-100 to-gray-300">
-                    {name}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Subtitle */}
-            <p className="mt-3 text-xl font-semibold text-center">
-              For their Resources, Mentorship, and Belief in Me Throughout this Journey.
-            </p>
-
-            <p className="mt-2 text-xs font-bold text-center">
-              © Copyright 2025. All rights Reserved.
-            </p>
-          </div>
-        </div>
-      </div>
+    {/* Rotating Text */}
+    <div className="mt-4 h-8 overflow-hidden relative">
+      <ul className="animate-slide-vertical space-y-1">
+        {["UPES", "Dr. Sachin Chaudhary", "Dr. Praful Hambarde", "Mr. Akhil Chauhan"].map((name, index) => (
+          <li key={index} className="text-xl font-semibold text-center bg-clip-text text-transparent bg-gradient-to-t from-gray-100 to-gray-300">
+            {name}
+          </li>
+        ))}
+      </ul>
     </div>
+
+    {/* Subtitle */}
+    <p className="mt-3 text-xl font-semibold text-center">
+      For their Resources, Mentorship, and Belief in Me Throughout this Journey.
+    </p>
+
+    <p className="mt-2 text-xs font-bold text-center">
+      © Copyright 2025. All rights Reserved.
+    </p>
+  </div>
+</div>
+        </div>
+     
 
   );
 };
