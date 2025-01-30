@@ -1,7 +1,40 @@
 import { ButtonPrimary, ButtonOutline, ButtonWithArrow } from "./Button";
 import { useState, useEffect } from "react";
 import Footer from "./Footer";
+const ToolIcon = ({ src, alt }) => {
+    const [isTooltipVisible, setIsTooltipVisible] = useState(false);
 
+    const handleTouch = (e) => {
+        e.preventDefault();
+        setIsTooltipVisible(!isTooltipVisible);
+    };
+
+    return (
+        <div
+            className="relative group flex justify-center items-center"
+            onTouchStart={handleTouch}
+            onMouseEnter={() => setIsTooltipVisible(true)}
+            onMouseLeave={() => setIsTooltipVisible(false)}
+        >
+            <div className=" bg-gray-800 bg-opacity-10 rounded-lg flex items-center justify-center">
+                <img
+                    src={src}
+                    alt={alt}
+                    className="tool-icon w-10 h-10 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg p-1"
+                />
+            </div>
+            {/* Animated Tooltip */}
+            <div className={`absolute -top-10 left-1/2 transform -translate-x-1/2 transition-all duration-300 z-10
+                ${isTooltipVisible ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2'}`}>
+                <div className="bg-gray-700 text-white px-3 py-1.5 rounded-lg text-sm whitespace-nowrap shadow-lg">
+                    {alt}
+                    {/* Arrow */}
+                    <div className="absolute -top-1 left-1/2 -translate-x-1/2 border-4 border-transparent border-b-gray-800"></div>
+                </div>
+            </div>
+        </div>
+    );
+};
 const About = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const images = [
@@ -34,22 +67,17 @@ const About = () => {
                     {/* Text Section */}
                     <div className="flex-1">
                         <div className="p-6 bg-gray-600 bg-opacity-5 rounded-lg border-2 border-gray-500 shadow-md">
-                            <h2 className="headline-1 max-w-[30ch] sm:max-w-[20ch] lg:max-w-[30ch] mt-5 mb-8 lg:mb-5">
-                                My journey into the world of technology began with a fascination
-                                for how systems and algorithms shape our everyday lives. This
-                                curiosity has driven me to explore diverse fields, from designing
-                                websites to diving into computer vision and machine learning. I
-                                thrive on solving complex problems and creating intelligent systems
-                                that make a difference.
+                            <h2 className="headline-2 max-w-[30ch] sm:max-w-[20ch] lg:max-w-[30ch] mt-5 mb-8 lg:mb-5">
+                                My brain contains traces of extreme curiosity and an unhealthy obsession with making machines think. Inspired from Dr. Heinz Doofenshmirtz of Phineas and ferb, I became an AI enthusiast who believes technology should be both intelligent and entertaining and not dangerous.
                             </h2>
                         </div>
                     </div>
 
                     {/* Image Section */}
                     <div className="flex-1 flex justify-center lg:justify-end mt-8 lg:mt-0">
-                        <figure className="w-full max-w-[480px] bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 rounded-[60px] overflow-hidden">
+                        <figure className="w-full max-w-[440px] bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 rounded-[60px] overflow-hidden">
                             <img
-                                src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/ngjouhs7hexendx6qxvo"
+                                src="\images\me.jpg"
                                 width={656}
                                 height={800}
                                 alt="Surya Vashisth"
@@ -65,12 +93,7 @@ const About = () => {
                     <div className="flex-1">
                         <div className="p-6 bg-gray-600 bg-opacity-5 rounded-lg border-2 border-gray-500 shadow-md">
                             <h2 className="headline-2 max-w-[30ch] sm:max-w-[20ch] lg:max-w-[30ch] mt-5 mb-8 lg:mb-5">
-                                In addition to my technical pursuits, I have a strong love for
-                                street photography and editing. The art of capturing moments and
-                                expressing creativity through visuals offers me a unique balance to
-                                my technical mindset. I enjoy experimenting with different
-                                techniques, bringing a creative touch to my photos, and enhancing
-                                them through editing.
+                                In addition to my technical pursuits, I love to make different photographs. As truly said by Joel Meyerowitz ~ "Everybody takes a picture, but taking a picture is very different from making a photograph. A photograph is something that has an emotion, that you give shape to, whereas a picture has no consciousness."
                             </h2>
                         </div>
                     </div>
@@ -171,19 +194,55 @@ const About = () => {
                             <h2 className="headline-1 max-w-[30ch] sm:max-w-[20ch] lg:max-w-[30ch] mt-5 mb-8 lg:mb-5 text-center">
                                 ESSENTIAL TOOLS I USE
                             </h2>
-                            <div className="tools-container grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
-                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/bonptahneiwanhu0hqsp" alt="python" className="tool-icon w-10 h-10 mx-auto" />
-                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/vfj2d39kbkjtvdfmbi25" alt="pytorch" className="tool-icon w-10 h-10 mx-auto" />
-                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/zv9qv9xtxaso4ty3hcyw" alt="tensorflow" className="tool-icon w-10 h-10 mx-auto" />
-                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/odp1mc1tjetmz9jhywvk" alt="flask" className="tool-icon w-10 h-10 mx-auto" />
-                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/eglu7f0nf1rycyhvezsk" alt="Tableau" className="tool-icon w-10 h-10 mx-auto" />
-                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/wnawhsajrovrmfxu6ott" alt="tailwindcss" className="tool-icon w-10 h-10 mx-auto" />
-                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/yevv8fp8dr6vhwtqu6l5" alt="react" className="tool-icon w-10 h-10 mx-auto" />
-                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/griqkbrnbhuqgaagx5qa" alt="javascript" className="tool-icon w-10 h-10 mx-auto" />
-                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/tzgmopvith2y4io5wocj" alt="figma" className="tool-icon w-10 h-10 mx-auto" />
-                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/a8hepjzld5t3grhytpc7" alt="css" className="tool-icon w-10 h-10 mx-auto" />
-                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/tgnfpdhahvsagb9mt623" alt="html" className="tool-icon w-10 h-10 mx-auto" />
-                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/iyzq5qzre2kijash4bam" alt="bootstrap" className="tool-icon w-10 h-10 mx-auto" />
+                            <div className="tools-container grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 pb-4"> {/* Added pb-8 for tooltip space */}
+                                <ToolIcon
+                                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/bonptahneiwanhu0hqsp"
+                                    alt="Python"
+                                />
+                                <ToolIcon
+                                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/vfj2d39kbkjtvdfmbi25"
+                                    alt="PyTorch"
+                                />
+                                <ToolIcon
+                                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/zv9qv9xtxaso4ty3hcyw"
+                                    alt="TensorFlow"
+                                />
+                                <ToolIcon
+                                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/odp1mc1tjetmz9jhywvk"
+                                    alt="Flask"
+                                />
+                                <ToolIcon
+                                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/eglu7f0nf1rycyhvezsk"
+                                    alt="Tableau"
+                                />
+                                <ToolIcon
+                                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/wnawhsajrovrmfxu6ott"
+                                    alt="Tailwind CSS"
+                                />
+                                <ToolIcon
+                                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/yevv8fp8dr6vhwtqu6l5"
+                                    alt="React"
+                                />
+                                <ToolIcon
+                                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/griqkbrnbhuqgaagx5qa"
+                                    alt="JavaScript"
+                                />
+                                <ToolIcon
+                                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/tzgmopvith2y4io5wocj"
+                                    alt="Figma"
+                                />
+                                <ToolIcon
+                                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/a8hepjzld5t3grhytpc7"
+                                    alt="CSS"
+                                />
+                                <ToolIcon
+                                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/tgnfpdhahvsagb9mt623"
+                                    alt="HTML"
+                                />
+                                <ToolIcon
+                                    src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/iyzq5qzre2kijash4bam"
+                                    alt="Bootstrap"
+                                />
                             </div>
                         </div>
                         {/* Contact Section */}
@@ -194,7 +253,12 @@ const About = () => {
                             <div className="flex flex-col sm:flex-row gap-4">
                                 {/* Email Button */}
                                 <a
-                                    href="mailto:vashisth.surya1918@gmail.com"
+                                    href={`mailto:vashisth.surya1918@gmail.com?subject=Project%20Collaboration%20Inquiry&body=Hi%20Surya,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20idea.%0D%0A%0D%0AProject%20Details:%0D%0A-%20%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards,%0D%0A`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+
+                                    icon=""
+                                    classes="px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm md:text-base"
                                     className="flex items-center justify-center sm:justify-start gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg shadow hover:bg-sky-400 transition w-full sm:w-auto"
                                 >
                                     <span className="material-symbols-rounded">mail</span>
@@ -224,7 +288,7 @@ const About = () => {
                 </div>
 
             </div>
-           
+
         </section>
     );
 };

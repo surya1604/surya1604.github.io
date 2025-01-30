@@ -218,7 +218,7 @@ body {
 
 /* Essential Tools Section */
 .tools-section {
-  padding: 20px;
+  padding: 10px;
   background-color: transparent;
   color: #fff;
   text-align: center;
@@ -233,6 +233,7 @@ body {
 }
 
 .tools-container {
+  
   display: flex;
   gap: 15px; /* Space between icons */
   animation: scroll-right 25s linear infinite; /* Horizontal scrolling animation */
@@ -240,12 +241,10 @@ body {
 }
 
 .tool-icon {
-  height: 40px; /* Fixed size for consistency */
-  width: 40px;
-  object-fit: contain;
-  border-radius: 12px;
+  object-fit:contain;
+  border-radius: 10px;
   background-color: #333;
-  padding: 8px;
+  padding: 2px;
   flex-shrink: 0; /* Prevent shrinking */
   transition: transform 0.5s ease-in-out;
 }
