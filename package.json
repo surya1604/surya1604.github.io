@@ -1,43 +1,46 @@
 {
-  "name": "surya",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "postinstall": "chmod +x node_modules/.bin/vite"
-  },
-  "engines": {
-    "node": "18.x"
-  },
-  "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "esbuild": "^0.24.2",
-    "lenis": "^1.1.20",
-    "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^7.1.1",
-    "tailwind-scrollbar": "^3.1.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.17.0",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react": "^4.0.0",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.17.0",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
-    "globals": "^15.0.0",
-    "postcss": "^8.4.20",
-    "tailwindcss": "^3.4.2",
-    "vite": "^6.0.11"
-  }
+    "name": "surya",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "homepage": "https://suryavashisth.me",
+    "scripts": {
+        "predeploy": "npm run build",
+        "start": "vite",
+        "dev": "vite",
+        "build": "vite build",
+        "lint": "eslint .",
+        "preview": "vite preview",
+        "deploy": "gh-pages -d build"
+    },
+    "engines": {
+        "node": "18.x"
+    },
+    "dependencies": {
+        "@fortawesome/free-brands-svg-icons": "^6.7.2",
+        "@fortawesome/react-fontawesome": "^0.2.2",
+        "esbuild": "^0.24.2",
+        "lenis": "^1.1.20",
+        "prop-types": "^15.8.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^7.1.1",
+        "tailwind-scrollbar": "^3.1.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.17.0",
+        "@types/react": "^18.0.28",
+        "@types/react-dom": "^18.0.11",
+        "@vitejs/plugin-react": "^4.0.0",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^9.17.0",
+        "eslint-plugin-react": "^7.32.2",
+        "eslint-plugin-react-hooks": "^5.0.0",
+        "eslint-plugin-react-refresh": "^0.4.16",
+        "gh-pages": "^6.3.0",
+        "globals": "^15.0.0",
+        "postcss": "^8.4.20",
+        "tailwindcss": "^3.4.2",
+        "vite": "^6.0.11"
+    }
 }
