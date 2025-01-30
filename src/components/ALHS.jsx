@@ -43,12 +43,28 @@ const ALHS = () => {
                                 An <b>Automated Light and Human Detection System</b> aims to optimize energy consumption by intelligently controlling lighting based on human presence. Using a camera-based detection mechanism, the system identifies when a person enters its field of view and automatically switches on the light. Conversely, it turns off the light when no person is detected, ensuring efficient energy utilization. This project leverages modern detection technologies to create a seamless and cost-effective solution for smart classrooms and office automation, reducing unnecessary power wastage while enhancing user convenience.
                             </p>
                         </div>
-
-                        <div className="flex flex-col py-10 px-6 md:px-72 items-center justify-center">
+                        {/* Essential Tools Section */}
+            <div className="flex justify-center items-center w-full pb-16">
+    <div className="tech-section bg-gray-600 bg-opacity-5 rounded-lg border-2 border-gray-500 shadow-md mb-9 max-w-4xl">
+    <h2 className="headline-3 max-w-[30ch] sm:max-w-[20ch] lg:max-w-[30ch] mt-5 mb-8 lg:mb-5 text-center">
+                                TECH STACK
+                            </h2>
+        <div className="tech-container grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/bonptahneiwanhu0hqsp" alt="python" className="tech-icon w-10 h-10 mx-auto" />
+                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/vfj2d39kbkjtvdfmbi25" alt="pytorch" className="tech-icon w-10 h-10 mx-auto" />
+                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/odp1mc1tjetmz9jhywvk" alt="flask" className="tech-icon w-10 h-10 mx-auto" />
+                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/griqkbrnbhuqgaagx5qa" alt="javascript" className="tech-icon w-10 h-10 mx-auto" />
+                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/a8hepjzld5t3grhytpc7" alt="css" className="tech-icon w-10 h-10 mx-auto" />
+                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/tgnfpdhahvsagb9mt623" alt="html" className="tech-icon w-10 h-10 mx-auto" />
+                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/iyzq5qzre2kijash4bam" alt="bootstrap" className="tech-icon w-10 h-10 mx-auto" />
+                            </div>
+                        </div>
+                        </div>
+                        {/* <div className="flex flex-col pb-16 px-6 md:px-72 items-center justify-center">
                             <h1 className="text-3xl md:text-4xl uppercase text-gray-400 font-bold font-mono">
                                 How does it work?
                             </h1>
-                        </div>
+                        </div> */}
 
                         {/* Heading Section */}
                         <div className="text-center bg-gray-700 shadow-lg rounded-3xl p-2 max-w-5xl">
@@ -70,9 +86,9 @@ const ALHS = () => {
                             <h6 className="text-sm md:text-base font-medium tracking-wider uppercase text-gray-400">
                                 I guess you remember Madhur from the MediVision Project!
                                 {" "}<strong className="text-blue-400">
-                                    He'll be guiding us through this project as well! </strong> Madhur loves to research, for which he comes to the class at the earliest! {" "}<strong className="text-blue-400">
+                                    He'll be guiding us through this project as well! </strong> Madhur loves to test new technology, for which he came to the class at the earliest! {" "}<strong className="text-blue-400">
                                     </strong> Let us see what happens when he enters the classroom {" "}<strong className="text-blue-400">
-                                    and sits to study </strong>
+                                    and sits to study. </strong>
                             </h6>
                         </div>
                     </div>

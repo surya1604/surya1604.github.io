@@ -396,7 +396,6 @@ const AceLucid = () => {
                   {/* Heading Section */}
                   <div className="text-left w-full lg:w-1/3">
                     <h6 className="text-sm font-medium tracking-wider uppercase text-gray-400">
-                      How did we do it?
                       Outcome?
                     </h6>
                     <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-t from-red-300 to-red-500">

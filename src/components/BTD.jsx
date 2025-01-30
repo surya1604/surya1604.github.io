@@ -36,7 +36,6 @@ const BTD = () => {
                                 classes="px-4 py-2 mt-2 md:mt-0"
                             />
                         </div>
-
                         <div className="flex flex-col justify-start pb-10">
                             <p className="text-sm md:text-base text-justify pb-4 px-6">
                                 The work introduces a lightweight Convolutional Neural Network (CNN) for detecting and classifying brain tumors using MRI images. The model was trained on a dataset containing 7,023 images categorized into four classes: glioma, meningioma, pituitary, and non-tumor. Key preprocessing steps included image resizing, normalization, and data augmentation to enhance dataset size and model robustness. The CNN architecture consists of convolutional, max pooling, dropout, flattening, and dense layers. Using the Adam optimizer, the model achieved an impressive 98.20% accuracy on the test dataset.
@@ -86,11 +85,25 @@ const BTD = () => {
                                     </a> for their invaluable contributions and support throughout the project. Their commitment played a pivotal role in achieving this milestone.
                                 </p>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
+{/* Essential Tools Section */}
+<div className="flex justify-center items-center w-full pt-16">
+    <div className="tech-section bg-gray-600 bg-opacity-5 rounded-lg border-2 border-gray-500 shadow-md max-w-4xl">
+    <h2 className="headline-3 max-w-[30ch] sm:max-w-[20ch] lg:max-w-[30ch] mt-5 mb-8 lg:mb-5 text-center">
+                                TECH STACK
+                            </h2>
+        <div className="tech-container grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/bonptahneiwanhu0hqsp" alt="python" className="tech-icon w-10 h-10 mx-auto" />
+                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/vfj2d39kbkjtvdfmbi25" alt="pytorch" className="tech-icon w-10 h-10 mx-auto" />
+                                <img src="https://res.cloudinary.com/dsbbvur7w/image/upload/f_auto,q_auto/v1/portfolio/About/odp1mc1tjetmz9jhywvk" alt="flask" className="tech-icon w-10 h-10 mx-auto" />
+                            </div>
+                        </div>
+                        </div>
 
-                <div className="flex flex-col pt-12 px-6 items-center justify-center">
+                <div className="flex flex-col px-6 pt-16 items-center justify-center">
                     <h1 className="text-3xl md:text-4xl uppercase text-gray-400 font-bold font-mono">
                         How does it work?
                     </h1>
@@ -139,16 +152,15 @@ const BTD = () => {
       feature extraction and reduction are carried out using convolutional and pooling layers.</strong>The extracted features are then utilized to train a 2D CNN model. The model first classifies images as either tumor or non-tumor. For images identified as having a tumor, the model further classifies them into three types of brain tumors: glioma, pituitary, and meningioma.
   </h6>
 </div>
-                <div className="flex justify-center pb-16">
-                    <div className="bg-neutral-800 shadow-lg rounded-3xl p-1 max-w-3xl text-center h-auto overflow-hidden transition-all duration-1000">
-                        <div className="animate-scroll whitespace-nowrap">
-                            <h6 className="text-lg font-medium tracking-wider uppercase text-gray-400">
-                                This work has been accepted at RACCAI 2024 (AIP Publishing). As a result, the architecture and detailed pipeline cannot be disclosed until the paper is officially published.
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-
+<div className="flex justify-center pb-16">
+    <div className="bg-neutral-800 shadow-lg rounded-3xl p-1 max-w-3xl text-center h-auto overflow-hidden transition-all duration-1000">
+        <div className="animate-scroll whitespace-nowrap hover:animation-play-state-paused">
+            <h6 className="text-lg font-medium tracking-wider uppercase text-gray-400">
+                This work has been accepted at RACCAI 2024 (AIP Publishing). As a result, the architecture and detailed pipeline cannot be disclosed until the paper is officially published.
+            </h6>
+        </div>
+    </div>
+</div>
                 <Footer />
             </div>
         </div>
