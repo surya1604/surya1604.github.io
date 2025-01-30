@@ -4,6 +4,12 @@
  */
 
 /**
+ * Node Modules
+ */
+import {ReactLenis} from 'lenis/react';
+
+
+/**
  * Components
  */
 
@@ -18,10 +24,15 @@ import DDS from "./components/DDS"
 import ALHS from "./components/ALHS";
 import Extra from "./components/Extra";
 import BTD from "./components/BTD";
+import ScrollToTop from './components/scroll';
 
 const App = () => {
   return (
-    <>
+   
+    
+    
+    <ReactLenis root>
+    <ScrollToTop /> 
       <Header />
       <main className="container mx-auto p-4">
         <Routes>
@@ -38,7 +49,8 @@ const App = () => {
           {/* Add more routes here as needed */}
         </Routes>
       </main>
-    </>
+      </ReactLenis>
+     
   );
 };
 
